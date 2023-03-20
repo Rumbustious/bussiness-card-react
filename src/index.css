@@ -1,0 +1,185 @@
+/* -----------------------*/
+/* Reset                  */
+/* -----------------------*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* -----------------------*/
+/* Page Style             */
+/* -----------------------*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22252c;
+  color: white;
+  letter-spacing: 0.1ch;
+}
+.personal-img {
+  width: 15rem;
+  border-radius: 20px;
+}
+p {
+  color: hsl(249, 20%, 84%);
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px #918f9c solid;
+  margin-block: 0.4rem;
+}
+h4 {
+  color: #edb88f;
+}
+#root {
+  background-color: #1a1b20;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.contact {
+  margin-block: 1rem;
+  text-decoration: none;
+}
+.contact > * {
+  text-decoration: none;
+  letter-spacing: 0.1ch;
+  font: bold normal 1rem sans-serif;
+  border: 0;
+  padding: 0.8rem;
+  margin: 0.4rem;
+  border-radius: 4px;
+  padding-inline: 0.8rem;
+  transition: font-size background-color ease-in-out 250ms;
+}
+.contact > *:hover {
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+.mail {
+  background-color: white;
+  color: black;
+}
+.linkedin {
+  background-color: hsl(212, 72%, 60%);
+  color: white;
+}
+.linkedin > * {
+  font-size: 1.1rem;
+}
+.linkedin:hover {
+  background-color: hsl(212 72% 50%);
+}
+.social {
+  width: 100%;
+  background-color: #16151a;
+  color: #918f9c;
+}
+.social > * {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  transition: font-size ease-in-out 250ms;
+}
+.social > *:hover {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.social > *:active, .social > *:visited {
+  color: #918f9c;
+}
+
+section {
+  width: 15rem;
+  aspect-ratio: 1.1;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+/* -----------------------*/
+/* Scrollbar style        */
+/* -----------------------*/
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #918f9c;
+}
+::-webkit-scrollbar-track {
+  background-color: #16151a;
+}
