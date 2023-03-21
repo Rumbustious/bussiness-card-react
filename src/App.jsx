@@ -18,7 +18,6 @@ export default function App() {
         <a
           className="mail"
           href="mailto:rumbustious0@gmail.com"
-          target="_blank"
         >
           <FontAwesomeIcon icon={faEnvelope} /> Email
         </a>
