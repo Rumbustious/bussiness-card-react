@@ -15,13 +15,17 @@ export default function App() {
       <h1>Ahmed Shazly</h1>
       <h4>Frontend Developer</h4>
       <address className="contact">
-        <a className="mail"
-        href="mailto:rumbustious0@gmail.com">
+        <a
+          className="mail"
+          href="mailto:rumbustious0@gmail.com"
+          target="_blank"
+        >
           <FontAwesomeIcon icon={faEnvelope} /> Email
         </a>
         <a
           className="linkedin"
           href="https://www.linkedin.com/in/ahmed-shazly-486a33234/"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
@@ -41,13 +45,16 @@ export default function App() {
         </p>
       </section>
       <div className="social">
-        <a href="https://www.facebook.com/ahmed.shazly.9216778/">
+        <a
+          href="https://www.facebook.com/ahmed.shazly.9216778/"
+          target="_blank"
+        >
           <FontAwesomeIcon icon={faSquareFacebook} />
         </a>
-        <a href="https://github.com/Rumbustious">
+        <a href="https://github.com/Rumbustious" target="_blank">
           <FontAwesomeIcon icon={faSquareGithub} />
         </a>
-        <a href="https://lichess.org/@/Rumbustious0">
+        <a href="https://lichess.org/@/Rumbustious0" target="_blank">
           <FontAwesomeIcon icon={faChessKnight} />
         </a>
       </div>
